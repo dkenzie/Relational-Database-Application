@@ -1,0 +1,34 @@
+﻿<Window x:Class="CPSC304_Project.UserInformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPSC304_Project"
+        mc:Ignorable="d" WindowStyle="None"
+        Title="UserInformationWindow" Height="300" Width="300">
+    <Canvas>
+        <Label Content="User Information" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Username:" FontSize="16" Canvas.Top="32"/>
+        <TextBlock Name="UsernameTextBlock" Width="194" Canvas.Left="90" Canvas.Top="37" Height="27" FontSize="16" />
+        <Label Content="Show within:" FontSize="16" Canvas.Top="64"/>
+        <ComboBox Name="TaskDateRangeComboBox" SelectedIndex="0" Canvas.Left="104" Canvas.Top="68" Width="87" Height="27" SelectionChanged="TaskDateRangeComboBox_SelectionChanged">
+            <ComboBoxItem Content="All time"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+        </ComboBox>
+        <Button Name="CloseButton" Content="X" Height="22" Width="22" Canvas.Left="250" Canvas.Top="10" Click="CloseButton_Click"/>
+        <ScrollViewer Canvas.Left="75" Canvas.Top="96" Height="188" Width="209">
+            <StackPanel Name="MainStackPanel"/>
+        </ScrollViewer>
+        <Label Content="Task List:" FontSize="16" Canvas.Top="96"/>
+        <Label Name="DaysTextLabel" Content="days" FontSize="16" Canvas.Top="64" Canvas.Left="193" Visibility="Hidden"/>
+    </Canvas>
+</Window>

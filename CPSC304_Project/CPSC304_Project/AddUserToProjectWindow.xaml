@@ -1,0 +1,20 @@
+﻿<Window x:Class="CPSC304_Project.AddUserToProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPSC304_Project"
+        mc:Ignorable="d" WindowStyle="None" ResizeMode="NoResize"
+        Title="AddUserToProjectWindow" Height="440" Width="300">
+    <Canvas>
+        <Label Content="All Projects" FontSize="16"/>
+        <Separator Height="86" Margin="0" Canvas.Top="-17" Width="250"/>
+        <Button Name="CloseButton" Content="X" Width="22" Canvas.Left="255" Canvas.Top="6" Height="22" Click="CloseButton_Click"/>
+        <ScrollViewer Width="284" Canvas.Top="32" Height="402" >
+            <StackPanel Name="MainStackPanel">
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Canvas>
+</Window>

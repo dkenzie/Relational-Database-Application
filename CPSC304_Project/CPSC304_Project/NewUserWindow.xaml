@@ -1,0 +1,39 @@
+﻿<Window x:Class="CPSC304_Project.NewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPSC304_Project"
+        mc:Ignorable="d" WindowStyle="None"
+        Title="NewUserWindow" Height="200" Width="400">
+    <Grid Margin="0,0,3.4,3.6" >
+        <Label MouseDown="Rect_MouseDown" Margin="0,0,0.2,0"/>
+        <Rectangle Margin="0,0,0.2,0" MouseDown="Rect_MouseDown" Panel.ZIndex="0"/>
+        <Grid Name="UsernameGrid" Margin="-124,30,42.2,124">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Username: " FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox Name="UsernameTextBox" FontSize="16" Grid.Column="1" Height="30"/>
+        </Grid>
+        <Grid Name="PasswordGrid" Margin="-124,71,42.2,79" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Password:  " FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox Name="PasswordTextbox" FontSize="16" Grid.Column="1" Height="30"/>
+        </Grid>
+        <Button Name="CreateNewUserButton" Content="Create" FontSize="16" Margin="273,117,42.2,24" Click="CreateNewUserButton_Click" />
+        <Button x:Name="BackButton" Content="Back" FontSize="16" Margin="213,117,122.2,23" Click="BackButton_Click" />
+        <CheckBox Name="IsManagerCheckBox" Content="Manager" IsChecked="False" Margin="112,117,175.2,40" />
+    </Grid>
+
+</Window>
