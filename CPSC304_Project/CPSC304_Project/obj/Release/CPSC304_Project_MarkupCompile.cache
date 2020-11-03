@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-F:\CPSC 304 project\Relational-Database-Application\CPSC304_Project\CPSC304_Project\obj\Debug\
+F:\CPSC 304 project\Relational-Database-Application\CPSC304_Project\CPSC304_Project\obj\Release\
 CPSC304_Project
 none
 false
-DEBUG;TRACE
+TRACE
 F:\CPSC 304 project\Relational-Database-Application\CPSC304_Project\CPSC304_Project\App.xaml
 12-671802551
 
-22-339678068
-14-2145064451
+21-722166304
+13738642453
 AddUserToProjectWindow.xaml;AdvancedQueriesWindow.xaml;MainWindow.xaml;MainWindow2.xaml;NewListWindow.xaml;NewProjectWindow.xaml;NewTaskWindow.xaml;NewUserWindow.xaml;ProjectMembersWindow.xaml;SelectUserWindow.xaml;UserInformationWindow.xaml;ViewTaskWindow.xaml;
 
 True

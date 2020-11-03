@@ -586,17 +586,17 @@ namespace CPSC304_Project
                     ");";
                 createTasksTableCmd.ExecuteNonQuery ();
 
-                MySqlCommand createWorksOnTableCmd = mySqlConnection.CreateCommand ();
-                createWorksOnTableCmd.CommandText =
-                    "CREATE TABLE IF NOT EXISTS WorksOn (" +
-                    "projectId INT, " +
-                    "userId INT, " +
-                    "PRIMARY KEY (projectId, userId), " +
-                    "FOREIGN KEY (projectId) REFERENCES Projects(id), " +
-                    "FOREIGN KEY (userId) REFERENCES Users(id) " +
-                    ");";
-                createWorksOnTableCmd.ExecuteNonQuery ();
-                mySqlConnection.Close ();
+MySqlCommand createWorksOnTableCmd = mySqlConnection.CreateCommand ();
+createWorksOnTableCmd.CommandText =
+    "CREATE TABLE IF NOT EXISTS WorksOn (" +
+    "projectId INT, " +
+    "userId INT, " +
+    "PRIMARY KEY (projectId, userId), " +
+    "FOREIGN KEY (projectId) REFERENCES Projects(id), " +
+    "FOREIGN KEY (userId) REFERENCES Users(id) " +
+    ");";
+createWorksOnTableCmd.ExecuteNonQuery ();
+mySqlConnection.Close ();
 
             }
             initialized = true;
